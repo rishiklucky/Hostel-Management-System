@@ -1,0 +1,53 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fee Management</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Reset default margin and padding */
+    body {
+        margin: 0;
+        padding: 0;
+        background-image:linear-gradient(white,grey);
+        width: 680px;
+        height: 680px;
+    
+    }
+    header {
+            background-color:black;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header><h1>Fee Details</h1></header><br>
+    <table class="table" border="2">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Mobile No</th>
+          <th>Fee</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% user.forEach(function(item) { %>
+          <tr>
+            <td><%= item.f_name %></td>
+            <td><%= item.mnumber %></td>
+            <td><%= item.fee %></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
