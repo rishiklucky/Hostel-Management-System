@@ -35,7 +35,7 @@ app.get('/admin_signup',(req,res)=>{
 
 
 //mongoDb atlas url
-const uri ="mongodb+srv://2311cs010480:hms123@hms.kjnbk0p.mongodb.net/?retryWrites=true&w=majority&appName=HMS"
+const uri ="paste your mongodb atlas link here"
 
 //creating database and connecting mongoose.
 
